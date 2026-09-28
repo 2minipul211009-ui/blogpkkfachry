@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Resume Materi Bab 4: Pemasaran Produk Perangkat Keras (Hal. 103-122) — PKK Kelas XII TKJ. Disusun oleh M. Fachry Praditya.">
+  <meta name="author" content="M. Fachry Praditya">
+  <title>Pemasaran Produk Perangkat Keras — Resume PKK Bab 4 | M. Fachry Praditya</title>
+
+  <!-- Google Fonts: Merriweather (Heading) & Inter (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@400;700;900&display=swap"
+    rel="stylesheet">
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Top Navigation Bar -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-container">
+      <a href="#top" class="site-brand">
+        <i class="fa-solid fa-microchip brand-icon"></i>
+        <span class="brand-text">PKK<strong>Bab4</strong></span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="desktop-nav" id="desktopNav">
+        <a href="#paradigma-dasar">Paradigma</a>
+        <a href="#rekayasa-4p">Bauran 4P</a>
+        <a href="#radar-pestle">PESTLE</a>
+        <a href="#strategi-kompetisi">Kompetisi</a>
+        <a href="#dialektika-iklan">Periklanan</a>
+        <a href="#penetrasi-hardware">Afiliasi & Dropship</a>
+      </nav>
+
+      <div class="header-actions">
+        <button id="btnPrint" class="btn-print" title="Cetak / Simpan PDF">
+          <i class="fa-solid fa-print"></i>
+        </button>
+        <button id="btnHamburger" class="btn-hamburger" aria-label="Buka Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Reading Progress Bar -->
+    <div class="progress-bar-track">
+      <div class="progress-bar-fill" id="progressFill"></div>
+    </div>
+  </header>
+
+  <!-- Mobile Slide Menu -->
+  <div class="mobile-overlay" id="mobileOverlay"></div>
+  <aside class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-top">
+      <span class="drawer-brand">PKK Bab 4</span>
+      <button id="btnCloseDrawer" class="btn-close-drawer"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="drawer-author-box">
+      <i class="fa-solid fa-user-pen"></i>
+      <div>
+        <span class="drawer-label">Disusun oleh:</span>
+        <strong>M. Fachry Praditya</strong>
+      </div>
+    </div>
+    <nav class="drawer-nav">
+      <a href="#paradigma-dasar"><i class="fa-solid fa-shapes"></i> Paradigma & 7 Orientasi</a>
+      <a href="#rekayasa-4p"><i class="fa-solid fa-chart-pie"></i> Bauran Pemasaran 4P</a>
+      <a href="#radar-pestle"><i class="fa-solid fa-compass-drafting"></i> Lingkungan PESTLE</a>
+      <a href="#strategi-kompetisi"><i class="fa-solid fa-trophy"></i> Penetrasi & Keunggulan</a>
+      <a href="#dialektika-iklan"><i class="fa-solid fa-bullhorn"></i> Periklanan Kotler</a>
+      <a href="#penetrasi-hardware"><i class="fa-solid fa-network-wired"></i> Afiliasi, Dropship, Bundling</a>
+      <a href="#penulis" class="drawer-author-link"><i class="fa-solid fa-id-badge"></i> Tentang Penulis</a>
+    </nav>
+  </aside>
+
+  <!-- Hero / Headline Banner -->
+  <section class="hero-banner" id="top">
+    <div class="container hero-inner">
+      <div class="hero-meta">
+        <span class="badge badge-primary"><i class="fa-solid fa-book-bookmark"></i> Resume Materi Bab 4</span>
+        <span class="badge badge-outline">Halaman 103 – 122</span>
+        <span class="badge badge-outline">PKK Kelas XII TKJ</span>
+      </div>
+
+      <h1 class="hero-title">Pemasaran Produk Perangkat Keras</h1>
+      <p class="hero-subtitle">
+        Ringkasan lengkap strategi pemasaran, bauran 4P, analisis PESTLE, periklanan, serta model bisnis afiliasi dan
+        dropship dalam industri komputer &mdash; berdasarkan buku PKK Kelas XII halaman 103 sampai 122.
+      </p>
+
+      <div class="hero-author">
+        <div class="author-avatar">
+          <i class="fa-solid fa-pen-nib"></i>
+        </div>
+        <div class="author-info">
+          <span class="author-name">M. Fachry Praditya</span>
+          <span class="author-role">Peserta Didik &bull; Teknik Komputer dan Jaringan</span>
+        </div>
+      </div>
+
+      <div class="stats-row">
+        <div class="stat-item">
+          <span class="stat-number">20</span>
+          <span class="stat-label">Halaman</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">6</span>
+          <span class="stat-label">Bab Utama</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">4P</span>
+          <span class="stat-label">Bauran Pemasaran</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">PESTLE</span>
+          <span class="stat-label">Kerangka Makro</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="container main-content">
+
+    <!-- BAB 1: Paradigma & 7 Orientasi -->
+    <article class="article-card" id="paradigma-dasar">
+      <div class="article-header">
+        <span class="chapter-badge">Bab 1</span>
+        <span class="chapter-ref">Halaman 104–108</span>
+      </div>
+
+      <h2>Paradigma Pertukaran Nilai & 7 Orientasi Pasar</h2>
+
+      <blockquote class="editorial-quote">
+        <p>
+          "Dalam dunia bisnis perangkat keras, bagian pemasaran ibarat ujung tombak. Produk sehebat apa pun akan
+          menjadi beban jika tidak dipasarkan dengan strategi yang tepat demi meraih keuntungan berkelanjutan."
+        </p>
+        <cite>&mdash; Refleksi pembuka, Halaman 104</cite>
+      </blockquote>
+
+      <p>
+        Menurut <strong>American Marketing Association (AMA)</strong>, pemasaran bukan sekadar jual-beli biasa. Ia
+        merupakan serangkaian proses menciptakan, mengomunikasikan, menghantarkan, dan mempertukarkan sesuatu yang
+        bernilai nyata bagi pelanggan, mitra bisnis, serta masyarakat luas. Inti dari keseluruhan kegiatan ini
+        berpijak pada satu hal pokok: <strong>menjaga kepuasan konsumen</strong>.
+      </p>
+
+      <h3>7 Orientasi Produsen <span class="ref-small">(Halaman 105–108)</span></h3>
+      <p>
+        Arah kebijakan perusahaan bermula dari pertanyaan mendasar: <em>apakah produk yang kita buat benar-benar
+          menjawab keinginan pasar?</em> Berikut tujuh jenis orientasi yang dianut para produsen:
+      </p>
+
+      <div class="card-grid card-grid-2">
+        <div class="info-card">
+          <span class="card-number">01</span>
+          <h4>Orientasi Produk</h4>
+          <p>Produsen percaya bahwa kualitas tinggi dan performa unggul secara otomatis akan menarik pembeli. Cocok
+            ketika selera pasar sejalan dengan kemampuan teknis pabrik.</p>
+        </div>
+
+        <div class="info-card">
+          <span class="card-number">02</span>
+          <h4>Orientasi Penjualan</h4>
+          <p>Mengutamakan teknik promosi gencar dan persuasi agresif supaya stok barang yang sudah terlanjur diproduksi
+            bisa habis terjual dengan harga semaksimal mungkin.</p>
+        </div>
+
+        <div class="info-card">
+          <span class="card-number">03</span>
+          <h4>Orientasi Produksi</h4>
+          <p>Mengejar efisiensi lewat produksi massal berbiaya murah. Hanya efektif bila permintaan tinggi dan selera
+            konsumen cenderung stabil, seperti proyek laptop murah massal.</p>
+        </div>
+
+        <div class="info-card featured">
+          <span class="card-number">04</span>
+          <h4>Orientasi Pemasaran <span class="badge-inline">Modern</span></h4>
+          <p><strong>Standar bisnis masa kini:</strong> perusahaan tidak memaksakan produknya ke pasar, melainkan
+            meneliti kebutuhan konsumen terlebih dahulu, baru kemudian merancang produk yang tepat sasaran.</p>
+        </div>
+
+        <div class="info-card">
+          <span class="card-number">05</span>
+          <h4>Orientasi Konsumen</h4>
+          <p>Gaya hidup dan daya beli pengguna menjadi acuan utama dalam merancang varian produk — misalnya segmen
+            gaming ASUS ROG versus segmen perkantoran hemat daya.</p>
+        </div>
+
+        <div class="info-card">
+          <span class="card-number">06</span>
+          <h4>Orientasi Perusahaan</h4>
+          <p>Data pasar dijadikan pedoman tertinggi dalam organisasi; divisi riset, produksi, hingga distribusi semuanya
+            bergerak berdasarkan hasil analisis pemasaran.</p>
+        </div>
+
+        <div class="info-card full-width">
+          <span class="card-number">07</span>
+          <h4>Kemitraan Saling Menguntungkan</h4>
+          <p>Titik keseimbangan ideal: produsen memperoleh keuntungan wajar dan perputaran modal lancar, sementara
+            konsumen mendapatkan produk andal, rasa percaya, serta garansi purna jual yang terjamin.</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- BAB 2: Bauran 4P -->
+    <article class="article-card" id="rekayasa-4p">
+      <div class="article-header">
+        <span class="chapter-badge">Bab 2</span>
+        <span class="chapter-ref">Halaman 108–110</span>
+      </div>
+
+      <h2>Bauran Pemasaran (Marketing Mix 4P)</h2>
+
+      <p>
+        Konsep bauran pemasaran pertama kali dicetuskan oleh <strong>Prof. Neil Borden</strong> dari Harvard University
+        pada dekade 1960-an, lalu disederhanakan oleh <strong>Prof. Jerome E. McCarthy</strong> ke dalam empat pilar
+        utama yang dikenal sebagai 4P:
+      </p>
+
+      <div class="pillar-list">
+        <div class="pillar-item">
+          <div class="pillar-label">
+            <span class="pillar-letter">P</span>
+            <span class="pillar-name">Product</span>
+          </div>
+          <div class="pillar-desc">
+            <strong>Spesifikasi & Fitur Produk</strong>
+            <p>Meliputi arsitektur komponen, daya tahan, sistem pendingin, sertifikasi keamanan listrik, paket driver,
+              serta jaminan garansi servis atau tukar unit.</p>
+          </div>
+        </div>
+
+        <div class="pillar-item">
+          <div class="pillar-label">
+            <span class="pillar-letter">P</span>
+            <span class="pillar-name">Price</span>
+          </div>
+          <div class="pillar-desc">
+            <strong>Penetapan Harga</strong>
+            <p>Perhitungan biaya yang dikeluarkan konsumen (uang, waktu, tenaga) berdasarkan Harga Pokok Penjualan
+              (HPP), diskon grosir, opsi cicilan, dan harga paket bundling.</p>
+          </div>
+        </div>
+
+        <div class="pillar-item">
+          <div class="pillar-label">
+            <span class="pillar-letter">P</span>
+            <span class="pillar-name">Place</span>
+          </div>
+          <div class="pillar-desc">
+            <strong>Saluran Distribusi</strong>
+            <p>Cara menyalurkan produk agar sampai ke tangan konsumen tepat waktu — melalui toko fisik, jaringan
+              distributor, marketplace daring, serta layanan kurir ekspres.</p>
+          </div>
+        </div>
+
+        <div class="pillar-item">
+          <div class="pillar-label">
+            <span class="pillar-letter">P</span>
+            <span class="pillar-name">Promotion</span>
+          </div>
+          <div class="pillar-desc">
+            <strong>Komunikasi & Branding</strong>
+            <p>Mencakup periklanan, publikasi benchmark, keikutsertaan di pameran IT, hingga penjualan personal oleh
+              tenaga teknis untuk membangun citra merek di benak konsumen.</p>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- BAB 3: PESTLE -->
+    <article class="article-card" id="radar-pestle">
+      <div class="article-header">
+        <span class="chapter-badge">Bab 3</span>
+        <span class="chapter-ref">Halaman 111</span>
+      </div>
+
+      <h2>Lingkungan Pemasaran: Makro (PESTLE) & Mikro</h2>
+
+      <p>
+        Kinerja usaha perangkat keras dipengaruhi oleh dua ranah lingkungan: <strong>lingkungan makro</strong> yang
+        berada di luar kendali pengusaha, serta <strong>lingkungan mikro</strong> yang bisa dikelola secara langsung.
+      </p>
+
+      <h3>Faktor Makro — Kerangka PESTLE</h3>
+      <div class="card-grid card-grid-3">
+        <div class="pestle-item">
+          <span class="pestle-letter" style="--accent: #2563eb;">P</span>
+          <h4>Politik</h4>
+          <p>Regulasi kuota impor motherboard, kebijakan insentif industri lokal TKDN, dan stabilitas geopolitik rantai
+            pasok chip semikonduktor.</p>
+        </div>
+
+        <div class="pestle-item">
+          <span class="pestle-letter" style="--accent: #059669;">E</span>
+          <h4>Ekonomi</h4>
+          <p>Fluktuasi nilai tukar Rupiah terhadap Dolar AS, laju inflasi, dan daya beli masyarakat kelas menengah.</p>
+        </div>
+
+        <div class="pestle-item">
+          <span class="pestle-letter" style="--accent: #d97706;">S</span>
+          <h4>Sosial</h4>
+          <p>Pergeseran budaya kerja hybrid/WFH, lonjakan kebutuhan laptop kreator konten, serta maraknya turnamen
+            esport.</p>
+        </div>
+
+        <div class="pestle-item">
+          <span class="pestle-letter" style="--accent: #7c3aed;">T</span>
+          <h4>Teknologi</h4>
+          <p>Siklus inovasi yang cepat: adopsi PCIe generasi baru, peralihan DDR4 ke DDR5, serta integrasi NPU untuk
+            akselerasi AI.</p>
+        </div>
+
+        <div class="pestle-item">
+          <span class="pestle-letter" style="--accent: #dc2626;">L</span>
+          <h4>Legal</h4>
+          <p>Sertifikasi izin edar (SDPPI/Postel), standar SNI kelistrikan, perlindungan paten desain, dan regulasi UU
+            ITE.</p>
+        </div>
+
+        <div class="pestle-item">
+          <span class="pestle-letter" style="--accent: #0d9488;">E</span>
+          <h4>Ekologi</h4>
+          <p>Pengelolaan limbah elektronik (e-waste), sertifikasi efisiensi daya PSU 80 Plus, dan penggunaan kemasan
+            daur ulang.</p>
+        </div>
+      </div>
+
+      <h3>Faktor Mikro — Aktor yang Bisa Dikendalikan</h3>
+      <div class="micro-grid">
+        <div class="micro-item">
+          <strong>1. Konsumen</strong>
+          <span>Individu, gamer, instansi perkantoran, dan sekolah yang menentukan spesifikasi hardware yang
+            dibutuhkan.</span>
+        </div>
+        <div class="micro-item">
+          <strong>2. Pegawai (SDM)</strong>
+          <span>Teknisi perakit, analis spesifikasi, dan staf layanan purna jual.</span>
+        </div>
+        <div class="micro-item">
+          <strong>3. Pemasok</strong>
+          <span>Distributor resmi penyedia suku cadang: prosesor, SSD, dan aksesoris peripheral.</span>
+        </div>
+        <div class="micro-item">
+          <strong>4. Media Publikasi</strong>
+          <span>Portal berita teknologi, tech reviewer YouTube, dan forum komunitas komputer.</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- BAB 4: Strategi Kompetisi -->
+    <article class="article-card" id="strategi-kompetisi">
+      <div class="article-header">
+        <span class="chapter-badge">Bab 4</span>
+        <span class="chapter-ref">Halaman 112–114</span>
+      </div>
+
+      <h2>Penetrasi Pasar & 6 Pilar Keunggulan Bersaing</h2>
+
+      <p>
+        Menurut <strong>Swastha</strong>, strategi pemasaran adalah kerangka utama operasional perusahaan untuk mencapai
+        tujuan bisnis. Di tengah ketidakpastian ekonomi, ketahanan usaha kecil-menengah justru menjadi fondasi
+        kestabilan ekonomi nasional.
+      </p>
+
+      <h3>4 Langkah Strategis Penetrasi Pasar</h3>
+      <div class="steps-list">
+        <div class="step-item">
+          <span class="step-number">1</span>
+          <div>
+            <h4>Analisis Kebutuhan Pasar</h4>
+            <p>Melakukan riset lapangan untuk mengetahui jenis perangkat yang diminati, perkiraan jumlah, batas
+              kesanggupan bayar, dan kapan konsumen membutuhkannya.</p>
+          </div>
+        </div>
+
+        <div class="step-item">
+          <span class="step-number">2</span>
+          <div>
+            <h4>Penetapan Target Pasar</h4>
+            <p>Tiga pilihan: <em>Pasar Individual (Custom Build)</em>, <em>Pasar Khusus (Niche Market)</em>, atau
+              <em>Segmentasi Pasar</em>. Bagi usaha rintisan, disarankan memilih niche market dan pasar individual
+              agar tidak berbenturan langsung dengan perusahaan besar.</p>
+          </div>
+        </div>
+
+        <div class="step-item">
+          <span class="step-number">3</span>
+          <div>
+            <h4>Posisi dalam Ekosistem Persaingan</h4>
+            <p>Menerapkan orientasi pelanggan, Total Quality Management (TQM), kemudahan akses, inovasi berkelanjutan,
+              serta Time Compression Management (TCM) untuk kecepatan layanan.</p>
+          </div>
+        </div>
+
+        <div class="step-item">
+          <span class="step-number">4</span>
+          <div>
+            <h4>Perumusan Bauran Strategi</h4>
+            <p>Menyusun dan menguji berbagai indikator bauran pemasaran secara berulang guna menemukan keunikan yang
+              membedakan dari pesaing.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="highlight-box">
+        <h4><i class="fa-solid fa-award"></i> 6 Tuas Diferensiasi
+          <span class="ref-small">(Peggy Lambing & Charles L. Kuehl, 2000)</span>
+        </h4>
+        <div class="chip-grid">
+          <div class="chip-item"><strong>1. Kualitas Superior</strong> — Bebas cacat pabrik & hasil benchmark stabil.
+          </div>
+          <div class="chip-item"><strong>2. Elastisitas Harga</strong> — Lebih terjangkau dan fleksibel untuk
+            negosiasi.</div>
+          <div class="chip-item"><strong>3. Aksesibilitas Lokasi</strong> — Mudah dijangkau, hemat ongkos kirim.</div>
+          <div class="chip-item"><strong>4. Variasi Pilihan</strong> — Konfigurasi hardware yang beragam dan fleksibel.
+          </div>
+          <div class="chip-item"><strong>5. Layanan Konsultatif</strong> — Ramah, solutif, paham kendala teknis.</div>
+          <div class="chip-item"><strong>6. Kecepatan Layanan</strong> — Durasi pengiriman dan servis yang cepat.</div>
+        </div>
+      </div>
+    </article>
+
+    <!-- BAB 5: Periklanan -->
+    <article class="article-card" id="dialektika-iklan">
+      <div class="article-header">
+        <span class="chapter-badge">Bab 5</span>
+        <span class="chapter-ref">Halaman 114–117</span>
+      </div>
+
+      <h2>Periklanan: Fungsi, Etika, & Jenis Media</h2>
+
+      <p>
+        Menurut <strong>Philip Kotler (1999)</strong>, periklanan adalah segala bentuk presentasi dan promosi
+        non-personal atas ide, barang, atau jasa yang dibiayai oleh sponsor yang jelas identitasnya. Iklan mengemban
+        lima fungsi utama:
+      </p>
+
+      <div class="numbered-list-cards">
+        <div class="nl-card">
+          <span class="nl-num">I</span>
+          <div>
+            <strong>Informatif</strong>
+            <p>Membangun permintaan awal saat produk baru diluncurkan — mengenalkan spesifikasi dasar dan manfaat
+              produk.</p>
+          </div>
+        </div>
+
+        <div class="nl-card">
+          <span class="nl-num">II</span>
+          <div>
+            <strong>Persuasif</strong>
+            <p>Membangun permintaan selektif di tengah persaingan ketat — menonjolkan keunggulan dibanding produk
+              lain.</p>
+          </div>
+        </div>
+
+        <div class="nl-card">
+          <span class="nl-num">III</span>
+          <div>
+            <strong>Pengingat</strong>
+            <p>Menjaga agar nama merek tetap diingat konsumen ketika tiba saatnya upgrade atau perbaikan perangkat.</p>
+          </div>
+        </div>
+
+        <div class="nl-card">
+          <span class="nl-num">IV</span>
+          <div>
+            <strong>Pemberi Nilai Tambah</strong>
+            <p>Membentuk kesan keandalan teknis, kemewahan, dan prestise sosial bagi pengguna produk tersebut.</p>
+          </div>
+        </div>
+
+        <div class="nl-card">
+          <span class="nl-num">V</span>
+          <div>
+            <strong>Penguat Promosi Lain</strong>
+            <p>Meningkatkan efektivitas tenaga penjualan lapangan dan kampanye diskon toko.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Etika & Media -->
+      <div class="two-col-panels">
+        <div class="panel">
+          <h4><i class="fa-solid fa-shield-halved"></i> 4 Rambu Etika Iklan <span class="ref-small">(Hal.
+              115)</span></h4>
+          <ul>
+            <li><strong>Jujur & Objektif:</strong> Informasi teknis (clock speed, kapasitas RAM, resolusi) wajib sesuai
+              fakta, tanpa berlebihan.</li>
+            <li><strong>Jelas & Mudah Dipahami:</strong> Bahasa lugas, tidak membingungkan konsumen awam.</li>
+            <li><strong>Beretika:</strong> Tidak menjatuhkan kompetitor secara tidak adil.</li>
+            <li><strong>Menarik Secara Visual:</strong> Desain grafis dan teks headline yang komunikatif dan enak
+              dipandang.</li>
+          </ul>
+        </div>
+
+        <div class="panel">
+          <h4><i class="fa-solid fa-layer-group"></i> Jenis Media Iklan <span class="ref-small">(Hal. 116–117)</span>
+          </h4>
+          <ul>
+            <li><strong>Iklan Baris (Cetak):</strong> 3–4 baris, hemat biaya — umum untuk jasa reparasi laptop.</li>
+            <li><strong>Iklan Kolom & Display:</strong> Lebih luas, dilengkapi gambar produk.</li>
+            <li><strong>Advertorial:</strong> Iklan berformat narasi berita jurnalistik yang mendalam.</li>
+            <li><strong>Media Elektronik & Digital:</strong> Radio, televisi, YouTube, web banner, dan iklan media
+              sosial.</li>
+          </ul>
+        </div>
+      </div>
+    </article>
+
+    <!-- BAB 6: Strategi Hardware -->
+    <article class="article-card" id="penetrasi-hardware">
+      <div class="article-header">
+        <span class="chapter-badge">Bab 6</span>
+        <span class="chapter-ref">Halaman 117–122</span>
+      </div>
+
+      <h2>Taktik Khusus: Afiliasi, Dropship, & Promosi Bundling</h2>
+
+      <p>
+        Industri perangkat keras memiliki tiga keunikan struktural: <strong>siklus hidup produk yang singkat</strong>,
+        <strong>laju keusangan teknologi yang sangat cepat</strong>, dan <strong>dominasi arsitektur standar
+          terbuka</strong>. Karena standar terbuka, produsen sulit mengunci pasar secara eksklusif. Solusinya adalah
+        berkolaborasi melalui tiga skema berikut:
+      </p>
+
+      <!-- Skema 1 -->
+      <div class="scheme-card">
+        <span class="scheme-badge">Skema 1</span>
+        <h3>Program Afiliasi (Affiliate Marketing)</h3>
+        <p>
+          Produsen memberikan <em>tracking URL</em> unik kepada mitra pemasar digital. Setiap transaksi yang terjadi
+          melalui tautan tersebut akan menghasilkan komisi otomatis bagi mitra.
+        </p>
+        <div class="platform-tags">
+          <span class="tag-label">Platform Rujukan (Hal. 118):</span>
+          <span class="tag">Shareasale.com</span>
+          <span class="tag">CJ.com</span>
+          <span class="tag">Idevaffiliate.com</span>
+          <span class="tag">Cake.com</span>
+        </div>
+      </div>
+
+      <!-- Skema 2 -->
+      <div class="scheme-card">
+        <span class="scheme-badge">Skema 2</span>
+        <h3>Dropship (Penjualan Tanpa Stok Gudang)</h3>
+        <p>
+          Penjual bertindak sebagai perantara <strong>tanpa perlu mengelola stok fisik</strong>. Alur operasionalnya:
+        </p>
+
+        <div class="flow-chain">
+          <div class="flow-step">
+            <span class="flow-num">1</span>
+            <strong>Pemasar</strong>
+            <span>Menampilkan katalog digital di etalase web</span>
+          </div>
+          <div class="flow-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+          <div class="flow-step">
+            <span class="flow-num">2</span>
+            <strong>Pembeli</strong>
+            <span>Memilih produk dan transfer pembayaran</span>
+          </div>
+          <div class="flow-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+          <div class="flow-step">
+            <span class="flow-num">3</span>
+            <strong>Pemasar</strong>
+            <span>Meneruskan pesanan & modal ke supplier</span>
+          </div>
+          <div class="flow-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+          <div class="flow-step flow-final">
+            <span class="flow-num">4</span>
+            <strong>Supplier</strong>
+            <span>Mengirim produk langsung ke alamat pembeli</span>
+          </div>
+        </div>
+
+        <div class="two-col-panels compact">
+          <div class="panel">
+            <h4>A. Blind Ship (Pengiriman Anonim)</h4>
+            <p>Pabrik tidak mencantumkan identitas asalnya pada paket, sehingga pembeli mengira produk berasal langsung
+              dari reseller.</p>
+          </div>
+          <div class="panel">
+            <h4>B. Dropship dengan Label Toko</h4>
+            <p>Kemasan dan nota dilabeli dengan identitas brand reseller — strategi efektif bagi startup muda untuk
+              membangun reputasi merek sendiri.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Skema 3 -->
+      <div class="scheme-card">
+        <span class="scheme-badge">Skema 3</span>
+        <h3>Pasar Promosi (Bundling & Giveaway)</h3>
+        <p>
+          Bekerja sama dengan vendor komputer agar produk periferal lokal (mousepad gaming, pendingin laptop, tinta
+          cartridge) dilibatkan sebagai bonus gratis saat promosi laptop utama mereka.
+        </p>
+
+        <h4 class="trio-heading">3 Media Andalan untuk Pemasaran Hardware <span class="ref-small">(Hal.
+            121–122)</span></h4>
+        <div class="card-grid card-grid-3">
+          <div class="media-card">
+            <div class="media-icon"><i class="fa-solid fa-envelope-open-text"></i></div>
+            <h5>Newsletter</h5>
+            <p>Email berkala berisi edukasi (tutorial rakit PC, tips airflow, patch update) untuk menjaga loyalitas
+              pelanggan.</p>
+          </div>
+
+          <div class="media-card">
+            <div class="media-icon"><i class="fa-solid fa-book"></i></div>
+            <h5>Katalog Produk</h5>
+            <p>Brosur terperinci memuat spesifikasi soket, konsumsi daya, dimensi fisik, dan harga agar pembeli bisa
+              menganalisis kompatibilitas secara mandiri.</p>
+          </div>
+
+          <div class="media-card">
+            <div class="media-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+            <h5>SEO (Mesin Pencari)</h5>
+            <p>Optimasi website agar tampil di halaman pertama Google saat orang mencari "jasa instalasi jaringan" atau
+              "servis laptop terdekat".</p>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Penulis Section -->
+    <section class="author-section" id="penulis">
+      <div class="author-card-full">
+        <div class="author-card-avatar">
+          <i class="fa-solid fa-laptop-code"></i>
+        </div>
+        <div class="author-card-body">
+          <span class="author-label">Tentang Penulis</span>
+          <h2>M. Fachry Praditya</h2>
+          <p class="author-title-text">Web Developer &bull; Peserta Didik Teknik Komputer dan Jaringan &bull; SMK Kelas
+            XII</p>
+          <p class="author-bio">
+            Halaman web ini dirancang dan dikembangkan secara mandiri oleh <strong>M. Fachry Praditya</strong> sebagai
+            resume interaktif untuk mata pelajaran <em>Produk Kreatif dan Kewirausahaan (PKK) Bab 4: Pemasaran Produk
+              Perangkat Keras</em> — mencakup halaman 103 hingga 122. Seluruh materi ditulis ulang dengan gaya bahasa
+            yang berbeda, ditampilkan dengan tata letak editorial modern, serta dirancang agar nyaman dibaca di berbagai
+            ukuran layar.
+          </p>
+          <div class="tech-tags">
+            <span><i class="fa-brands fa-html5"></i> HTML5</span>
+            <span><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+            <span><i class="fa-brands fa-js"></i> JavaScript</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <span class="footer-brand"><i class="fa-solid fa-microchip"></i> PKK Bab 4</span>
+        <p>Resume Pemasaran Produk Perangkat Keras &bull; Halaman 103–122 &bull; PKK Kelas XII TKJ</p>
+      </div>
+      <div class="footer-right">
+        <span class="footer-dev">Developed by <strong>M. Fachry Praditya</strong></span>
+        <span class="footer-sub">Teknik Komputer dan Jaringan &bull; SMK Kelas XII</span>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <span>&copy; 2026 M. Fachry Praditya. All Rights Reserved.</span>
+        <a href="#top" class="back-to-top"><i class="fa-solid fa-chevron-up"></i> Kembali ke Atas</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
